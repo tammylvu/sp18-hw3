@@ -31,20 +31,29 @@ Let's practice handling `params` from a form POST request.
 
 We've defined a controller `TeachersController` for you, along with two views `views/teachers/new.html.erb` and `views/teachers/show.html.erb`.
 
-Go to `localhost:3000/teachers/new` - there should be no errors. Following, fill out all form inputs and submit the form - you should see a page without the inputs you entered. Change `TeachersController` such that on form submission, the inputs you entered into the form are rendered.
+Go to `localhost:3000/teachers/new` - there should be no errors. Following, fill out all form inputs and submit the form - you should see a page without the inputs you entered.
 
-Hint: this only requires embedded Ruby.
+#### Question 1a
+Change `TeachersController` such that on form submission, the inputs you entered into the form are rendered.
 
+Hint: look at both the 'new' and 'show' teacher views (where can you find these files?) to see what params are being sent through the form and what variables the show view is expecting to render from the controller.  
+Hint 2: Try to observe the logs in the terminal window running your rails server
+
+#### Question 1b
 Finally, answer the questions in `ANSWERS.md`.
 
 ### Question 2
 To practice everything we've learned in the course so far, please do whatever is necessary to support the following:
 
 #### Feature 1
-A GET request to `localhost:3000/students/new` renders a form for a student. This form should have at least three inputs, all of which have placeholders (can be anything) defined in a controller. Form submission should create a POST request and render a view (at any route) with all the form inputs.
+A GET request to `localhost:3000/students/new` renders a form for a student. This form should have at least three inputs (whatever you want), all of which have placeholders defined in a controller.
+
+Form submission should create a POST request and render a view (at any route) with all the form inputs.
 
 #### Feature 2
-A GET request to `localhost:3000` should redirect to `localhost:3000/students/new`. We have not directly taught this in class, please consult Google to implement this.
+A GET request to `localhost:3000` should redirect to `localhost:3000/students/new`. 
+
+We have not directly taught this in class (though you may have seen it in a previous homework), please consult Google to implement this.
 
 ## Submission
 Run these commands to submit:
