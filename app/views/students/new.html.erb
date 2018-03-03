@@ -1,0 +1,14 @@
+<%= form_tag students_path do %>
+  <%= label_tag(:full_name, "Full name") %>
+  <%= text_field_tag(:full_name_stud, nil, placeholder: @placeholder_name) %>
+
+  <%= label_tag(:sid, "Student ID number") %>
+  <%= text_field_tag(:course_name_stud, nil, placeholder: @placeholder_sid) %>
+
+  <%= label_tag(:grade_level, "Grade level") %>
+  <%= text_field_tag(:grade_level_stud, nil, placeholder: @placeholder_grade) %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <%= submit_tag("Create student") %>
+<% end %>
